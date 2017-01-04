@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from './Header';
+import Content from './Content';
 
 class App extends React.Component {
     sayHey() {
@@ -12,15 +14,15 @@ class App extends React.Component {
         };
         return (
             <div>
-                <h1>Hello Lee</h1>
-                <h2> Welcome to {text}</h2>
-                <button onClick={this.sayHey}>Click Me</button>
-
-                <p style = {pStyle}>{1 == 1 ? 'True' : 'False'}</p>
-                {/*jsx에서는 if-else가 없어서 위와 같이 처리한다. */}
+                <Header />
+                <Content />
             </div>
         );
     }
 }
+
+
+
+
 
 export default App;
